@@ -1,0 +1,154 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #fce4ec; /* Pastel pink background color */
+  animation: backgroundColorChange 5s infinite alternate; /* Background color animation */
+  position: relative;
+}
+
+@keyframes backgroundColorChange {
+  from {
+    background-color: #fce4ec;
+  }
+  to {
+    background-color: #e1bee7; /* Slightly darker pastel pink */
+  }
+}
+
+.container {
+  text-align: center;
+  color: #37474f; /* Dark blue text color */
+  animation: fadeIn 2s ease-in-out; /* Text fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.heart {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  animation: heartAnimation 2s ease-in-out forwards;
+}
+
+@keyframes heartAnimation {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+h1 {
+  color: #e91e63; /* Pink text color */
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.toggle-button {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 0 5px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.yes {
+  background-color: #aed581; /* Light green color for 'Yes' */
+  color: #2e7d32; /* Dark green text color */
+}
+
+.no {
+  background-color: #ffb74d; /* Light orange color for 'No' */
+  color: #e65100; /* Dark orange text color */
+}
+
+.no:hover {
+  transform: translateX(calc(-1px - 5%)); /* Move 'No' button to the left on hover */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+/* ... (existing styles) */
+
+.rose {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  opacity: 0;
+  animation: roseAnimation 2s ease-in-out forwards;
+}
+
+@keyframes roseAnimation {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+/* ... (existing styles) */
+/* ... (existing styles) */
+
+.cupid {
+  position: absolute;
+  top: 30%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+  animation: cupidAnimation 2s ease-in-out forwards;
+}
+
+@keyframes cupidAnimation {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+/* ... (existing styles) */
