@@ -8,9 +8,8 @@
 
 function toggleNo() {
     
-  const name = prompt("Great! What's your name?");
-  if (name) {
-    alert(`Thank you, ${name}! Looking forward to our Valentine's date!\nMore Detail's on text Kiddo <3!!`);
+ 
+    alert(`Thank you, Lily! Looking forward to our Valentine's date!\nMore Detail's on text Kiddo <3!!`);
 
   }
 }
