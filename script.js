@@ -12,7 +12,7 @@ function toggleNo() {
     alert(`Thank you, Lily! Looking forward to our Valentine's date!\nMore Detail's on text Kiddo <3!!`);
 
   }
-}
+
 
 function runAway() {
   alert("Oh no! The 'No' option ran away!");
